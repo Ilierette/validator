@@ -1,0 +1,51 @@
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+body {
+  background: url("../img/background.jpg") no-repeat;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+.main-window {
+  background-color: #ffffff;
+}
+hr {
+  height: 1px;
+  margin: 12px 0;
+  border: 0;
+  border-top: 1px solid #c0c0c0;
+}
+
+.success {
+  border: 1px solid #5cb85c;
+}
+.danger {
+  border: 1px solid #d9534f;
+}
+
+.large-button {
+  width: 100%;
+  margin: 5px 0;
+}
+
+.html-only {
+  .form-control:required {
+    border: 1px solid #d9534f;
+  }
+  .form-control:required:valid {
+    border: 1px solid #5cb85c;
+  }
+  .form-control:required:invalid {
+    border: 1px solid #d9534f;
+  }
+}
+
+@media screen and (min-width:640px){
+  .main-window {
+    position: relative;
+    width: 400px;
+    top: 20px;
+    margin:auto;
+    background-color: #ffffff;
+    padding: 15px 0;
+  }
+}
