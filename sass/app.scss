@@ -1,25 +1,30 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+$succcess: #5cb85c;
+$danger: #d9534f;
+$background-color: #ffffff;
+$border-color: #c0c0c0;
+
 body {
   background: url("../img/background.jpg") no-repeat;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 .main-window {
-  background-color: #ffffff;
+  background-color: $background-color;
 }
 hr {
   height: 1px;
   margin: 12px 0;
   border: 0;
-  border-top: 1px solid #c0c0c0;
+  border-top: 1px solid $border-color;
 }
 
 .success {
-  border: 1px solid #5cb85c;
+  border: 1px solid $succcess;
 }
 .danger {
-  border: 1px solid #d9534f;
+  border: 1px solid $danger;
 }
 
 .large-button {
@@ -29,13 +34,13 @@ hr {
 
 .html-only {
   .form-control:required {
-    border: 1px solid #d9534f;
+    border: 1px solid $danger;
   }
   .form-control:required:valid {
-    border: 1px solid #5cb85c;
+    border: 1px solid $succcess;
   }
   .form-control:required:invalid {
-    border: 1px solid #d9534f;
+    border: 1px solid $danger;
   }
 }
 
@@ -44,8 +49,8 @@ hr {
     position: relative;
     width: 400px;
     top: 20px;
-    margin:auto;
-    background-color: #ffffff;
+    margin: 0 auto;
+    background-color: $background-color;
     padding: 15px 0;
   }
 }
