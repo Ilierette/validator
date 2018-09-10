@@ -12,7 +12,7 @@ body {
 }
 
 .success {
-  border: 1px solid var(--succcess);
+  border: 1px solid var(--success);
 }
 .danger {
   border: 1px solid var(--danger);
@@ -23,7 +23,7 @@ body {
     border: 1px solid var(--danger);
   }
   .form-control:required:valid {
-    border: 1px solid var(--succcess);
+    border: 1px solid var(--success);
   }
   .form-control:required:invalid {
     border: 1px solid var(--danger);
