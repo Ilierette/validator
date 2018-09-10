@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
 		
-		var NamePattern = /^[a-zA-Z]{2,}$/;   
+	var NamePattern = /^[a-zA-Z]{2,}$/;   
     var Name = document.getElementById("name");
     var Surname = document.getElementById("surname");
    

@@ -4,72 +4,101 @@
     <title>TI - Walidacja formularza</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/app.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/app.css">
   </head>
   <body>
-    <div class="main-window html-only">
-      <div class="container-fluid">
-        <header class="content-header">
-          <h4>Tylko HTML5</h4>
-          <hr>
-          <p>
-            Wypożyczalnia rowerów Szybki Bill. <br>
-            Aby wypożyczyć rower wypełnij poniższy formularz:
-          </p>
-        </header>
-        <form class="form-horizontal" method="get" enctype="text/plain" id="form">
-          <div class="form-group">
-            <label class="control-label col-xs-12 col-sm-5" for="name">Imie:</label>
-            <div class="col-xs-12 col-sm-7">
-              <input type="text" name="name" id="name" class="form-control"
-                     pattern="[a-zA-Z]{2,}" required>
+    <div class="container main-window py-4 px-3 my-3 html-only">
+      <header class="content-header">
+        <h1>Tylko HTML5</h1>
+        <p>
+          Wypożyczalnia rowerów Szybki Bill. <br>
+          Aby wypożyczyć rower wypełnij poniższy formularz:
+        </p>
+      </header>
+      <form class="form-horizontal" method="get" enctype="text/plain" id="form">
+        <div class="row">
+          <div class="col-12 col-sm-6">
+            <div class="form-group">
+              <input  type="text"
+                      placeholder="Imie" 
+                      name="name" 
+                      id="name" 
+                      class="form-control"
+                      pattern="[a-zA-Z]{2,}" 
+                      required>
             </div>
           </div>
-          <div class="form-group">
-            <label class="control-label col-xs-12 col-sm-5" for="name">Nazwisko:</label>
-            <div class="col-xs-12 col-sm-7">
-              <input type="text" name="surname" id="surname" class="form-control"
-                     pattern="[a-zA-Z]{2,}" required>
+          <div class="col-12 col-sm-6">
+            <div class="form-group">
+              <input  type="text" 
+                      placeholder="Nazwisko" 
+                      name="surname" 
+                      id="surname" 
+                      class="form-control"
+                      pattern="[a-zA-Z]{2,}" 
+                      required>
             </div>
           </div>
-          <div class="form-group">
-            <label class="control-label col-xs-12 col-sm-5" for="email">Email:</label>
-            <div class="col-xs-12 col-sm-7">
-              <input type="email" name="email" id="email" class="form-control"
-                     pattern="[0-9a-zA-Z_.-]+@[0-9a-zA-Z.-]+\.[a-zA-Z]{2,3}" required>
+          <div class="col-12">
+            <div class="form-group">
+              <input  type="email"
+                      placeholder="E-mail"
+                      name="email" 
+                      id="email" 
+                      class="form-control"
+                      pattern="[0-9a-zA-Z_.-]+@[0-9a-zA-Z.-]+\.[a-zA-Z]{2,3}" 
+                      required>
             </div>
           </div>
-          <div class="form-group">
-            <label class="control-label col-xs-12 col-sm-5" for="telephone">Telefon:</label>
-            <div class="col-xs-12 col-sm-7">
-              <input type="tel" name="telephone" id="telephone" class="form-control"
-                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+          <div class="col-12">
+            <div class="form-group">
+              <input  type="tel"
+                      placeholder="Telefon"
+                      name="telephone" 
+                      id="telephone" 
+                      class="form-control"
+                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" 
+                      required>
             </div>
           </div>
-          <div class="form-group">
-            <label class="control-label col-xs-12 col-sm-5" for="telephone">Kod pocztowy:</label>
-            <div class="col-xs-12 col-sm-7">
-              <input type="text" name="zip-code" id="zip-code" class="form-control"
-                     pattern="[0-9]{2}\-[0-9]{3}" required>
+          <div class="col-12">
+            <div class="form-group">
+              <input  type="text"
+                      placeholder="Kod pocztowy"
+                      name="zip-code" 
+                      id="zip-code" 
+                      class="form-control"
+                      pattern="[0-9]{2}\-[0-9]{3}" 
+                      required>
             </div>
           </div>
-          <div class="form-group">
-            <label class="control-label col-xs-12 col-sm-5" for="telephone">Hasło:</label>
-            <div class="col-xs-12 col-sm-7">
-              <input type="password" name="password" id="password" class="form-control"
-                     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required>
+          <div class="col-12 col-sm-6">
+            <div class="form-group">
+              <input  type="password"
+                      placeholder="Hasło" 
+                      name="password" 
+                      id="password" 
+                      class="form-control"
+                      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" 
+                      required>
             </div>
           </div>
-          <div class="form-group">
-            <label class="control-label col-xs-12 col-sm-5" for="password-confirm">Potwierdź hasło:</label>
-            <div class="col-xs-12 col-sm-7">
-              <input type="password" name="password-confirm" id="password-confirm" class="form-control"
-                     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required>
-            </div>
+          <div class="col-12 col-sm-6">
+            <div class="form-group">
+              <input  type="password"
+                      placeholder="Potwierdź hasło"
+                      name="password-confirm" 
+                      id="password-confirm" 
+                      class="form-control"
+                      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" 
+                      required>
+              </div>
           </div>
-          <div class="form-group">
-            <label class="control-label col-xs-12 col-sm-5" for="password-confirm">Wybierz rower:</label>
-            <div class="col-xs-12 col-sm-7 pull-right">
+          <div class="col-12 col-sm-4 pr-0 text-right">
+            <label for="choose-bike">Wybierz rower:</label>
+          </div>
+          <div class="col-12 col-sm-8">
+            <div class="form-group">
               <select class="form-control" id="choose-bike">
                 <option value="child">Dziecięcy</option>
                 <option value="man">Męski</option>
@@ -77,34 +106,36 @@
               </select>
             </div>
           </div>
-          <div class="form-group">
-            <label class="control-label col-xs-12 col-sm-5" for="time-start">
-              Godzina od:
-            </label>
-            <div class="col-xs-12 col-sm-7">
+          <div class="col-12 col-sm-4 pr-0 mt-1 text-right">
+            <label for="time-start">Godzina od:</label>
+          </div>
+          <div class="col-12 col-sm-8 mt-1">
+            <div class="form-group">
               <input type="time" name="time-start" id="time-start" class="form-control">
             </div>
-            <label class="control-label col-xs-12 col-sm-5" for="time-start">
-              do:
-            </label>
-            <div class="col-xs-12 col-sm-7">
+          </div>
+          <div class="col-12 col-sm-4 pr-0 text-right">
+            <label for="time-stop">do:</label>
+          </div>
+          <div class="col-12 col-sm-8">
+            <div class="form-group">
               <input type="time" name="time-stop" id="time-stop" class="form-control">
             </div>
           </div>
-          <div class="form-group">
-            <label class="control-label col-xs-12 col-sm-5" for="password-confirm">Dnia:</label>
-            <div class="col-xs-12 col-sm-7">
+          <div class="col-12 col-sm-4 pr-0 text-right">
+            <label class="control-label" for="password-confirm">Dnia:</label>
+          </div>
+          <div class="col-12 col-sm-8">
+            <div class="form-group">
               <input type="date" name="borrow-date" id="borrow-date" class="form-control"><br>
             </div>
           </div>
-          <footer>
-            <hr>
-            <a class="btn btn-default" href="index.html">Anuluj</a>
-            <button type="submit" class="btn btn-primary pull-right">Wyślij</button>            
-          </footer>
-        </form>
-      </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        </div>
+        <footer class="text-right">
+          <a class="btn btn-default" href="index.html">Anuluj</a>
+          <button type="submit" class="btn btn-primary">Wyślij</button>            
+        </footer>
+      </form>
+    </div> 
   </body>
 </html>

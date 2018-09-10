@@ -1,56 +1,39 @@
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-
-$succcess: #5cb85c;
-$danger: #d9534f;
-$background-color: #ffffff;
-$border-color: #c0c0c0;
+@import "_custom.scss";
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 body {
   background: url("../img/background.jpg") no-repeat;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 14px;
 }
+
 .main-window {
-  background-color: $background-color;
-}
-hr {
-  height: 1px;
-  margin: 12px 0;
-  border: 0;
-  border-top: 1px solid $border-color;
+  background-color: var(--light);
+  border-radius: $border-radius;
+  max-width: 400px;
 }
 
 .success {
-  border: 1px solid $succcess;
+  border: 1px solid var(--succcess);
 }
 .danger {
-  border: 1px solid $danger;
-}
-
-.large-button {
-  width: 100%;
-  margin: 5px 0;
+  border: 1px solid var(--danger);
 }
 
 .html-only {
   .form-control:required {
-    border: 1px solid $danger;
+    border: 1px solid var(--danger);
   }
   .form-control:required:valid {
-    border: 1px solid $succcess;
+    border: 1px solid var(--succcess);
   }
   .form-control:required:invalid {
-    border: 1px solid $danger;
+    border: 1px solid var(--danger);
   }
 }
 
-@media screen and (min-width:640px){
-  .main-window {
-    position: relative;
-    width: 400px;
-    top: 20px;
-    margin: 0 auto;
-    background-color: $background-color;
-    padding: 15px 0;
-  }
+[type=reset], [type=submit], button, html [type=button] {
+  -webkit-appearance: none;
+}
+
+label {
+  line-height: 35px;
 }
